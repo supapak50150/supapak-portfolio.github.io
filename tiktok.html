@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: "Kanit", sans-serif;
+            scroll-behavior: smooth;
+            background-image: url("public/assets/images/Desktop - 1.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <div id="nav"></div>
+
+    <section class="pt-32 max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-[1fr_1fr_1fr] gap-8 items-center">
+            <!-- LEFT -->
+            <div>
+                <h1 class="text-4xl text-orange-400 font-bold mb-10">
+                    TikTok Portfolio
+                </h1>
+                <p class="text-white/70 leading-relaxed max-w-xl">
+                    วิดีโอ Short-form คิดคินเทนต์-ถ่ายทำ-ตัดต่อ ทดลองมุมเล่าเรื่อง พัฒนาเนื้อหาให้เหมาะกับแพลตฟอร์มและพฤติกรรมการรับชม
+                </p>
+            </div>
+            <!-- RIGHT -->
+            <div class="flex flex-col items-center text-center">
+                <p class="text-md uppercase tracking-widest text-white/70 mb-6">
+                    Tools
+                </p>
+
+                <div class="flex gap-6 items-center">
+                    <img src="public\assets\images\tiktok-icon.png" class="h-20" />
+                    <img src="public\assets\images\capcut-icon.png" class="h-20" />
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                    <a href="https://www.tiktok.com/@iam_kaminaxv?is_from_webapp=1&sender_device=pc" target="_blank"
+                    rel="noopener noreferrer"
+                    class="border border-white/20 text-center py-3 px-3 rounded-full hover:border-orange-400 transition">
+                    @iam_kaminaxv
+                </a>
+
+                <div class="flex items-center pt-5">
+                    <img src="public\assets\images\qr-tiktok.jpg" class="h-20" />
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10 my-16"></div>
+        <h2 class="text-2xl text-orange-400 font-bold mb-10">
+            🎞️ ตัวอย่าง Content :
+        </h2>
+        <!-- VIDEO -->
+        <div class="grid md:grid-cols-3 gap-16">
+            <!-- CLIP 1 -->
+            <div class="overflow-hidden hover:scale-[1.02] transition">
+                <div class="aspect-[9/16]">
+                    <blockquote class="tiktok-embed"
+                        cite="https://www.tiktok.com/@iam_kaminaxv/video/7592486071473032456"
+                        data-video-id="7592486071473032456" style="max-width: 605px; min-width: 325px">
+                        <section></section>
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- CLIP 2 -->
+            <div class="overflow-hidden hover:scale-[1.02] transition">
+                <div class="aspect-[9/16]">
+                    <blockquote class="tiktok-embed"
+                        cite="https://www.tiktok.com/@iam_kaminaxv/video/7544954269980544263"
+                        data-video-id="7544954269980544263" style="max-width: 605px; min-width: 325px">
+                        <section></section>
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- CLIP 3 -->
+            <div class="overflow-hidden hover:scale-[1.02] transition">
+                <div class="aspect-[9/16]">
+                    <blockquote class="tiktok-embed"
+                        cite="https://www.tiktok.com/@iam_kaminaxv/video/7473884716219780357"
+                        data-video-id="7473884716219780357" style="max-width: 605px; min-width: 325px">
+                        <section></section>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+    <script src="loadComponent.js" defer></script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: "Kanit", sans-serif;
+            scroll-behavior: smooth;
+            background-image: url("public/assets/images/Desktop - 1.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* ซ่อน Scrollbar เมื่อเปิด Modal */
+        .stop-scrolling {
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <div id="nav"></div>
+
+    <section class="pt-32 max-w-6xl mx-auto px-6">
+        <!-- Cafe -->
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <!-- IMAGE -->
+            <div class="group flex justify-center relative">
+                <div
+                    class="relative w-[260px] transition-all duration-500 transform -rotate-6 group-hover:-rotate-3 group-hover:scale-105">
+                    <img src="public/assets/images/cafe ads-portrait.png" onclick="openModalMini(this.src)"
+                        class="w-full rounded-3xl shadow-2xl cursor-pointer" />
+                </div>
+            </div>
+
+            <!-- TEXT -->
+            <div class="space-y-8">
+                <div class="space-y-2">
+                    <p class="text-orange-400 uppercase tracking-[0.2em] text-sm">
+                        Branding & Social Media Campaign
+                    </p>
+                    <p class="text-gray-500 uppercase tracking-[0.2em] text-xs">
+                        Self-Initiated Brand & Campaign Project
+                    </p>
+                </div>
+
+                <h1 class="text-5xl font-semibold leading-tight">Cozy Greek Cafe</h1>
+
+                <p class="text-gray-400 text-md leading-relaxed max-w-xl">
+                    ออกแบบ Branding และสื่อโฆษณาสำหรับคาเฟ่สไตล์กรีก
+                    ต้องการสร้างภาพลักษณ์อบอุ่น เข้าถึงง่าย
+                    และมีเอกลักษณ์ผ่านการเล่าเรื่องแบบ myth-inspired modern cafe
+                    ตั้งแต่การออกแบบ Key Visual, Social Media Ads
+                    ไปจนถึงวิดีโอโปรโมชัน
+                    เพื่อให้ภาพลักษณ์ของแบรนด์สื่อสารไปในทิศทางเดียวกันทุกช่องทาง
+                    (Visual Consistency)
+                </p>
+
+                <div class="flex gap-12 pt-6">
+                    <div>
+                        <p class="text-gray-400 text-sm">Role</p>
+                        <p class="font-medium">Branding Designer / Visual Designer</p>
+                    </div>
+
+                    <div>
+                        <p class="text-gray-400 text-sm">Tool</p>
+                        <p class="font-medium">Canva, Figma</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-20 flex justify-center">
+            <h1 class="text-5xl font-semibold leading-tight text-center">
+                Visual Identity
+            </h1>
+        </div>
+        <div class="max-w-4xl mx-auto p-4 space-y-4">
+            <div class="group overflow-hidden rounded-2xl transition-all ease-out hover:scale-[1.02]">
+                <img src="public/assets/images/cafe-cover.png" onclick="openModalMini(this.src)"
+                    class="w-full h-auto cursor-pointer object-cover" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div
+                    class="group overflow-hidden rounded-md transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                    <img src="public/assets/images/cafe-p1.png" onclick="openModal(0,0)"
+                        class="w-full h-auto object-cover" />
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="group overflow-hidden rounded-2xl transition-all ease-out hover:scale-[1.04]">
+                        <img src="public/assets/images/cafe-color.png" onclick="openModalMini(this.src)"
+                            class="w-full h-auto cursor-pointer object-cover" />
+                    </div>
+                    <div class="group overflow-hidden rounded-2xl transition-all ease-out hover:scale-[1.04]">
+                        <img src="public/assets/images/cafe-text.png" onclick="openModalMini(this.src)"
+                            class="w-full h-auto cursor-pointer object-cover" />
+                    </div>
+                    <div class="group overflow-hidden rounded-2xl transition-all ease-out hover:scale-[1.04]">
+                        <img src="public/assets/images/cafe-mocup.png" onclick="openModalMini(this.src)"
+                            class="w-full h-auto cursor-pointer object-cover" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- cafe.vdo -->
+        <div class="pt-20 flex justify-center">
+            <h1 class="text-5xl font-semibold leading-tight text-center">
+                Motion Graphic
+            </h1>
+        </div>
+        <section class="max-w-6xl mx-auto px-6 py-20">
+
+            <div class="grid md:grid-cols-2 gap-20">
+
+                <!-- VIDEO 1 -->
+                <div class="text-center group">
+                    <h2 class="text-4xl font-bold mb-3">
+                        BUY 1 GET 1
+                    </h2>
+
+                    <p class="text-gray-400 text-lg mb-8">
+                        ใช้งานทั้งหน้าร้านและโซเชียลมีเดีย เน้นการสื่อสารราคาอย่างชัดเจนและกระตุ้นการตัดสินใจซื้อ
+                    </p>
+
+                    <div class="relative rounded-[40px] overflow-hidden bg-gray-200 aspect-[9/16] shadow-xl 
+                            transition duration-500 group-hover:scale-105">
+
+                        <video class="w-full h-full object-cover" autoplay muted loop playsinline controls>
+                            <source src="public\assets\vdo\buy 1 get 1.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </div>
+
+                <!-- VIDEO 2 -->
+                <div class="text-center group">
+                    <h2 class="text-4xl font-bold mb-3">
+                        MATCHA DAY
+                    </h2>
+
+                    <p class="text-gray-400 text-lg mb-8">
+                        การแสดงราคาสินค้าที่สะท้อน Signature ของแบรนด์ Cozy Greek Café
+                        พร้อมสร้างการจดจำผ่านโทนสีและองค์ประกอบภาพ
+                    </p>
+
+                    <div class="relative rounded-[40px] overflow-hidden bg-gray-200 aspect-[9/16] shadow-xl 
+                            transition duration-500 group-hover:scale-105">
+
+                        <video class="w-full h-full object-cover" autoplay muted loop playsinline controls>
+                            <source src="public\assets\vdo\matcha latte.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- /.cafe.vdo -->
+
+        <!-- /. Cafe -->
+        <div class="border-t border-white/10 my-16"></div>
+        <!-- ads Dental -->
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <!-- TEXT -->
+            <div class="space-y-8">
+                <div class="space-y-2">
+                    <p class="text-orange-400 uppercase tracking-[0.2em] text-sm">
+                        Social Media Campaign
+                    </p>
+                    <p class="text-gray-500 uppercase tracking-[0.2em] text-xs">
+                        Conceptual Client Brief
+                    </p>
+                </div>
+
+                <h1 class="text-5xl font-semibold leading-tight">
+                    Dental Clinic Ads
+                </h1>
+
+                <p class="text-gray-400 text-md leading-relaxed max-w-xl">
+                    ชุดภาพโฆษณาคลินิกทันตกรรม
+                    ออกแบบเพื่อสื่อสารแพ็กเกจจัดฟันให้เข้าถึงง่าย สร้างความน่าเชื่อถือ
+                    และตอบโจทย์การสื่อสารบน Social Media
+                </p>
+
+                <div class="flex gap-12 pt-6">
+                    <div>
+                        <p class="text-gray-400 text-sm">Role</p>
+                        <p class="font-medium">Graphic Designer</p>
+                    </div>
+
+                    <div>
+                        <p class="text-gray-400 text-sm">Tool</p>
+                        <p class="font-medium">Canva</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="group max-w-md mx-auto">
+                <div class="relative overflow-hidden transition-all ease-out group-hover:scale-[1.04]">
+                    <img src="public/assets/images/doc-ads1.png" onclick="openModal(1,0)" class="cursor-pointer" />
+                </div>
+            </div>
+        </div>
+        <!-- /.ads Dental -->
+    </section>
+    <!-- MODAL -->
+    <div id="imageModalMini" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center z-50"
+        onclick="closeModalMini()">
+        <!-- ปุ่มปิด -->
+        <button class="absolute top-6 right-8 text-white text-4xl hover:scale-125 transition">
+            &times;
+        </button>
+
+        <!-- รูปใหญ่ -->
+        <img id="modalImage" class="max-h-[90vh] max-w-[90vw] shadow-2xl" />
+    </div>
+    <div id="imageModal"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-md transition-opacity duration-300">
+
+        <button onclick="closeModal()"
+            class="absolute top-6 right-8 text-white text-5xl font-light hover:text-gray-300 z-[60]">&times;</button>
+
+        <button onclick="changeImage(-1)"
+            class="absolute left-4 md:left-10 text-white text-6xl hover:bg-white/10 p-4 rounded-full transition z-[60]">&#10094;</button>
+
+        <div class="relative max-w-5xl max-h-[85vh] mx-4 flex items-center justify-center">
+            <img id="fullImage" src=""
+                class="max-w-full max-h-[85vh] rounded-lg shadow-2xl object-contain select-none transition-all duration-300">
+
+            <div id="imageCounter" class="absolute -bottom-10 left-1/2 -translate-x-1/2 text-white font-medium"></div>
+        </div>
+
+        <button onclick="changeImage(1)"
+            class="absolute right-4 md:right-10 text-white text-6xl hover:bg-white/10 p-4 rounded-full transition z-[60]">&#10095;</button>
+
+        <div class="absolute inset-0" onclick="closeModal()"></div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="loadComponent.js" defer></script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    <script>
+        function openModalMini(src) {
+            const modal = document.getElementById("imageModalMini");
+            const modalImg = document.getElementById("modalImage");
+
+            modalImg.src = src;
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+        }
+
+        function closeModalMini() {
+            const modal = document.getElementById("imageModalMini");
+
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+        }
+
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                closeModalMini();
+            }
+        });
+
+        let currentIndex = 0;
+        let currentCategory = 0; // 0 = cafe, 1 = doc-ads
+
+        const images = [
+            Array.from({ length: 10 }, (_, i) => `public/assets/images/cafe-p${i + 1}.png`),
+            Array.from({ length: 4 }, (_, i) => `public/assets/images/doc-ads${i + 1}.png`)
+        ];
+
+        const modal = document.getElementById("imageModal");
+        const fullImg = document.getElementById("fullImage");
+        const counter = document.getElementById("imageCounter");
+
+        function openModal(category, index) {
+            currentCategory = category; // เลือกหมวด
+            currentIndex = index;
+
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+            document.body.classList.add("stop-scrolling");
+
+            updateDisplay();
+        }
+
+        function closeModal() {
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+            document.body.classList.remove("stop-scrolling");
+        }
+
+        function changeImage(step) {
+            const currentImages = images[currentCategory];
+
+            currentIndex += step;
+
+            if (currentIndex >= currentImages.length) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = currentImages.length - 1;
+
+            fullImg.style.opacity = 0;
+            setTimeout(() => {
+                updateDisplay();
+                fullImg.style.opacity = 1;
+            }, 150);
+        }
+
+        function updateDisplay() {
+            const currentImages = images[currentCategory];
+
+            fullImg.src = currentImages[currentIndex];
+            counter.innerText = `${currentIndex + 1} / ${currentImages.length}`;
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (modal.classList.contains('flex')) {
+                if (e.key === "Escape") closeModal();
+                if (e.key === "ArrowRight") changeImage(1);
+                if (e.key === "ArrowLeft") changeImage(-1);
+            }
+        });
+    </script>
+</body>
+
+</html>
